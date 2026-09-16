@@ -10,7 +10,8 @@ Original file is located at
 import requests
 
 # GitHub API token
-token = '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'
+import os
+token = os.environ['GITHUB_TOKEN']  # set GITHUB_TOKEN in your env; never hard-code a token
 headers = {'Authorization': f'token {token}'}
 
 import time
